@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*etiquetas*/
+h1 {
+
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: nav;
+    background-color: rgb(6, 6, 68);
+    color: white;
+    text-align: center;
+    height: 5vh;
+    
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    grid-area: aside;
+    height: 85vh;
+}
+
+section {
+    grid-area: section;
+height: 85vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    background-color: rgb(6, 6, 68);
+    color: white;
+    text-align: center;
+    height: 5vh;
+}
+
+/*clases*/
+
+/*text*/
+.p1 {
+font-weight: bold;   
+}
+.p2 {
+    color: grey;
+}
+/*Divs*/
+.container {
+    display: grid;
+    grid-template-areas: "nav nav nav nav nav"
+    "aside section section section section"
+    "footer footer footer footer footer";
+    gap: 1rem;
+    background-color: rgb(208, 208, 208);
+
+}
+
+.commerce {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    background-color: white;
+    padding-top: 3%;
+    
+}
+.products img {
+    width: 200px;
+}
+
+.comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(6, 6, 68);
+    color: white;
+    height: 2rem;
+    width: 100%;
+}
